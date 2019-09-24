@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+</head>
+<body>
+      
+
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="title"> Meet your next hook-up</h1>
+            <h2 class="header">Answer the survey questions</h2>
+
+                <div class="questions">
+                    <h3>About Me</h3>
+                    <h4>Name</h4>
+                    <input type="text" name= "" class="form-control" required />
+
+
+                    <h3>    Question 1  </h3>
+                    <h4> I like pineapple on pizza </h4>
+                    <select data-placeholder="" class="chosen" id="q1">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    <h3>    Question 2  </h3>
+                    <h4> Do you like animals </h4>
+                    <select data-placeholder="" class="chosen" id="q2">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    <h3>    Question 3  </h3>
+                    <h4> Do you like the outdoors ? </h4>
+                    <select data-placeholder="" class="chosen" id="q3">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+
+                    <h3>    Question 4  </h3>
+                    <h4> Do you like trying new foods? </h4>
+                    <select data-placeholder="" class="chosen" id="q4">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    <h3>    Question 5  </h3>
+                    <h4> Do you like heights ? </h4>
+                    <select data-placeholder="" class="chosen" id="q5">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    <h3>    Question 6  </h3>
+                    <h4> Do you care about the enviroment? </h4>
+                    <select data-placeholder="" class="chosen" id="q6">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    <h3>    Question 7  </h3>
+                    <h4> Do you speak multiple languages ? </h4>
+                    <select data-placeholder="" class="chosen" id="q7">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+
+                    <h3>    Question 8  </h3>
+                    <h4> Do you like alone time ? </h4>
+                    <select data-placeholder="" class="chosen" id="q8">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    
+                    <h3>    Question 9  </h3>
+                    <h4>  Do you consistenly need reassurance ? </h4>
+                    <select data-placeholder="" class="chosen" id="q9">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    
+                    <h3>    Question 10  </h3>
+                    <h4> Do you like cartoons? </h4>
+                    <select data-placeholder="" class="chosen" id="q10">
+                        <option value="1">1 (strongly disagree)</option>
+                        <option value="2">2 (midly agree)</option>
+                        <option value="3">3 (strongly agree)</option>
+
+                    </select>
+
+
+                    
+                    <br />
+
+                    <button 
+                    type="submit"
+                    id="submit"> submit</button>
+
+
+                    <br />
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                </div>
+        
+
+        </div>
+
+    </div>
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                        <h2 class="modal-title"> BEST MATCH</h2>
+                </div>
+
+                
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img
+                    id="matchImg"
+                    src="placeholder"
+                    alt="placerholder image"
+                    />
+                </div>
+        </div>
+
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+                close
+            </button>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $("#submit").on("click", function() {
+          function validateForm() {
+            var isValid = true;
+            $(".form-control").each(function() {
+              if ($(this).val() === "") isValid = false;
+            });
+            $(".chosen-select").each(function() {
+              if ($(this).val() === "") isValid = false;
+            });
+            return isValid;
+          }
+          if (validateForm() == true) {
+            var userData = {
+              name: $("#name").val(),
+              photo: $("#photo").val(),
+              scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+              ]
+            };
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", userData, function(data) {
+              $("#matchName").text(data.name);
+              $("#matchImg").attr("src", data.photo);
+              $("#resultsModal").modal("toggle");
+            });
+          } else {
+            alert("Please fill out all fields before submitting!");
+          }
+          return false;
+        });
+      </script>
+
+
+
+</body>
+</html>
